@@ -1,0 +1,106 @@
+<!DOCTYPE html> 
+<!-- Så här skriver du dina kommantare efter varje rad eller stycke -->
+<html lang="sv">
+<!-- Indikerar att vilket språk som används/kommer att användas, i detta fall svenska --> 
+<head>
+  <meta charset="utf-8">    <!-- talar om vilken typ av "teckenkodning" som skall används -->
+  <title>Exempel 1</title>  <!-- ger dokunmentet en titel som visas i webbläsarens namnlist, ofast på sjävla fönster fliken -->
+</head>
+<style>   /* används för att påverka utseendet i dokumentet med hjälp av CSS */
+  h1 {                              /* påverkar utseende på h1 */
+    text-align:center;              /* justerar textens placering horisontellt, i detta fall centrerat */
+    font-size:300%;                 /* sätter font storleken */
+  }  
+  #myHeader {                       /* skapar ett id som kan kallas på för att få med alla egenskaper för utseende */
+    background-color: lightblue;  /* sätter bakgrundsfärg */
+    color: black;                 /* sätter färg på text */
+    padding: 40px;                  /* skapar "utfyllnad" i ett element */
+    text-align: left;               /* justerar textens placering horisontellt, i detta fall åt vänster */
+  }
+  table {                            /* påverkar utseende på tabeller */
+    font-family: arial, sans-serif;  /* sätter vilken font som används */
+    border-collapse: collapse;       /* sätter ifall tabellens ramar ska sitta ihop eller var separerade */
+    width: 100%;  	                 /* sätter bredd */
+  }
+  td, th {                           /* påverkar tabell headers (allt innom <th></th>) */
+    border: 1px solid #dddddd;     /* sätter en ram med bredd och färg*/
+    text-align: left;                /* justerar textens placering horisontellt, i detta fall åt vänster */
+    padding: 8px;                    /* skapar "utfyllnad" i ett element */ 
+  }
+  tr:nth-child(even) {               /* påverkar specefika platser i tabeller, i detta fall alla jämna    !helt rätt förklara bättre! */
+    background-color: #dddddd;     /* sätter bakgrundsfärg */
+}
+</style>
+<body> <!-- innehåller huvuddelen av det som är synligt för användaren -->
+ 
+  <h1>Att kommentera koden</h1>
+  <h2>Du ska i denna uppgift kommentera koden till denna sidan.</h2>
+  <h3>Det är viktigt att du är tydlig i din beskrivning så det är lätt för alla att förstå vad du menar.</h3>
+  <!-- olika typer av rubriker i storleksordning störst 1 - 6 misnt  -->
+ 
+  <p>Det är viktigt att vara kommunikativ så slipper vi en massa missförstånd.<br>
+  Det här är <strong>lite mer text</strong> på en ny rad.</p>
+  <!-- paragrafer med text och en radbryting, samt att ett stycke i paragraf 2 är indikerat som viktigt med <strong></strong> -->
+ 
+  <p id="myHeader">Ibland vill man dela upp texten för att den ska bli lättare att läsa och kanske förstarka vissa saker som är viktiga!</p><br>
+  <p>För att underlätta för läsare kan det vara bra att dela upp information:</p>
+  <!-- paragrafer med text och en radbryting, samt att paragraf 1 är påverkad av det sedan tidigare definerade css id:et #myHeader -->
+ 
+  <ol>
+    <li>Första - det är viktigt att vi tänker på vem som ska ha användning för vår sida när vi skriver den.</li>
+    <li>Andra - så är användningen av olika färger viktigt för att användaren tydligt ska se det den behöver.</li>
+    <li>Tredje - ger vi förmycket information på en gång kan det bli svårt att hitta den info man söker.</li>
+  </ol>
+  <!-- en numrerad lista med 3 list element  -->
+ 
+  <ul>
+    <lh><h2>Bra länkar</h2></lh>
+    <li><a href="https://validator.w3.org/">Validering av kod.</a> När vi programmerat html så kan vi gå in på w3Cs hemsida och validera den så vi inte gjort några missar.</li>
+    <li><a href="https://www.arkitektkopia.se/akademi/stark-budskapet-med-komplementfarger/">Komplementfärger</a> hjälper oss så att det vi vill ha fram blir tydligare.</li>
+  </ul>
+  <!-- en onumrerad lista med 3 list element varav 2 innehåller hyperlänkar till URL:er(webbsidor) samt att en innehåller 1 header -->
+ 
+  <table> <!-- används för att skapa tabeller -->
+    <tr> <!-- rad i tabellen -->
+      <th>Andra sätt att dela upp information</th>
+      <th>För att det ska bli lättare att hitta</th>
+    </tr>
+    <!-- celler i tabellen innehållande "headers" -->
+
+    <tr>
+      <td>data1</td>
+      <td>data2</td>
+    </tr>
+    <!-- celler i tabellen innehållande text -->
+
+    <tr>
+      <td>data3</td>
+      <td>data4</td>
+    </tr>
+    <!-- celler i tabellen innehållande text  -->
+  </table> 
+ 
+  <img src="tradgard1.jfif" alt="trädgård" width="400">
+  <img src="https://kampanj.expressen.se/ikea/wp-content/uploads/2021/12/v1.jpg" alt="sovrum" width="250">
+  <!-- läggar in 2 bilder med namn samt bestämd bredd -->
+ 
+  <form> <!-- andvänds för att skapa en blankett-->
+
+    First name: <input type="text" name="fname"><br>
+    Last name:<input type="text" name="lname"><br>
+    <!-- tar emot text och sparad den i en variabel -->
+
+    <select>
+      <option value="volvo">Volvo</Option>
+      <option value="saab">Saab</Option>
+    </select> 
+    <!-- skapar val med värden och/eller namn -->
+
+    <input type="submit" value="Knapp">
+    <!-- input skapar ett fält/område där användaren kan mata in data, i detta faller så göra det med en knapp.
+    type="submit" skapar en kanpp, value="Knapp" i detta fallet sätter namnet på knappen -->
+
+  </form>  
+<!-- Slut på sidan, så när du kommenterat alla delar hit så ska du lämna in din fil i Canvas! -->
+</body>
+</html>
